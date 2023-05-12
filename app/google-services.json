@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456739889040",
+    "project_id": "mysports-9a0b3",
+    "storage_bucket": "mysports-9a0b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456739889040:android:0f28a765426e3075161d15",
+        "android_client_info": {
+          "package_name": "com.example.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456739889040-ucc3d4e46t4vig43ho0unsg0rtb2k3ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC22oFqRh7LjY-JpLfUSdWEqGlhSM2PHJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456739889040-ucc3d4e46t4vig43ho0unsg0rtb2k3ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

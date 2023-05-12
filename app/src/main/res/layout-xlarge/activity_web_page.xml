@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Admain.Web_activity_page"
+    android:orientation="vertical"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hockey_webpage_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#DCF6E654"
+        app:title="MAIN PAGE"
+        app:titleTextColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/reload_ewb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <WebView
+                    android:id="@+id/hockey_wbpages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+
+                </WebView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="100dp"
+                    >
+
+                    <ProgressBar
+                        android:id="@+id/progrss_web"
+                        style="?android:progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/nointernet"
+                        android:layout_centerHorizontal="true"
+                        android:outlineProvider="bounds"
+                        tools:ignore="InvalidId" />
+
+                    <ImageView
+                        android:id="@+id/nointernet"
+                        android:layout_width="133dp"
+                        android:layout_height="142dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="136dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="142dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_round_wifi_off"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/topmessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nointernet"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="59dp"
+                        android:gravity="center"
+                        android:text="NO INTERNET CONNECTION!!!"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/nointernet"
+                        app:layout_constraintStart_toStartOf="@id/nointernet"
+                        app:layout_constraintTop_toBottomOf="@+id/nointernet" />
+
+                    <TextView
+                        android:id="@+id/submassage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topmessage"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center"
+                        android:text="Please Check Your Internet Connectivity\nand tryagin!"
+                        android:textColor="#FD2B2B2B"
+                        android:textSize="13dp"
+                        android:textStyle="italic"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tryagin"
+                    android:layout_gravity="center"
+                    android:layout_width="99dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/admain_players_deatalis"
+                    android:gravity="center"
+                    android:text="Tryagin!"
+                    android:textColor="#BA000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+</LinearLayout>

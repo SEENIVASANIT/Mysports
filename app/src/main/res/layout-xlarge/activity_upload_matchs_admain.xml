@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/admain_maths_serch_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff00bf"
+                app:title="ALL TOURNAMENTS..."
+                app:titleTextColor="#FFEB3B"
+                tools:ignore="MissingConstraints" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+
+                        android:gravity="center"
+                        android:text="MATCH DATAS"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/win_match_only"
+                            android:layout_width="42dp"
+                            android:layout_height="38dp"
+
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_baseline_event_win_24" />
+
+                        <TextView
+                            android:id="@+id/wining_match_bottom_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="WINNING MATCHSES"
+                            android:textColor="#4C4A4A"
+                            android:textSize="10dp"
+
+
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/not_win_match_only"
+                            android:layout_width="42dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_baseline_event_notwin_24" />
+
+                        <TextView
+                            android:id="@+id/not_wining_match_bottom_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="LOSING MATCHES"
+                            android:textColor="#4C4A4A"
+                            android:textSize="10dp"
+
+                            android:textStyle="italic|bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:background="@color/antiqueWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/nointernet"
+                        android:visibility="invisible"
+                        android:layout_width="133dp"
+                        android:layout_height="142dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="136dp"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginEnd="142dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_round_wifi_off" />
+
+                    <TextView
+                        android:id="@+id/topmessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nointernet"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="59dp"
+                        android:gravity="center"
+                        android:text="NO INTERNET CONNECTION!!!"
+
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+
+                        app:layout_constraintEnd_toEndOf="@id/nointernet"
+                        app:layout_constraintStart_toStartOf="@id/nointernet"
+                        app:layout_constraintTop_toBottomOf="@+id/nointernet" />
+
+                    <TextView
+                        android:id="@+id/submassage"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topmessage"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center"
+                        android:text="Please Check Your Internet Connectivity\nand tryagin!"
+                        android:textColor="#FD2B2B2B"
+                        android:textSize="13dp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/tryagin"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:layout_width="99dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/admain_players_deatalis"
+                        android:gravity="center"
+                        android:layout_marginStart="135dp"
+                        android:text="Tryagin!"
+                        android:layout_below="@+id/submassage"
+                        android:textColor="#BA000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progrssbar_upload_page"
+                        style="?android:progressBarStyle"
+                        android:layout_width="130dp"
+                        android:layout_height="92dp"
+                        android:layout_below="@+id/nointernet"
+                        android:layout_marginStart="141dp"
+                        android:layout_marginTop="-76dp"
+                        android:layout_marginEnd="140dp"
+                        android:outlineProvider="bounds"
+                        android:padding="10dp"
+                        tools:ignore="InvalidId" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/show_all_maths"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.721"
+                        tools:ignore="MissingConstraints">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_new_matchs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E9C60C"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

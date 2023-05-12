@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Players.Players_Bio">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F46D37"
+        android:padding="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/back_to_bio"
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Profile"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image"
+        android:layout_width="135dp"
+        android:layout_height="103dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="138dp"
+        android:src="@drawable/sthc_pic"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_image"
+        android:gravity="center"
+        android:text="Chose Picture"
+        android:textColor="#F1513B"
+        android:textStyle="bold|italic"
+        android:textSize="15dp" />
+
+</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#A818C1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/players_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Enter your name"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DATE OF BIRTH"
+
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#A818C1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/players_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:hint="Enter your data of birth"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AGE"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#A818C1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/players_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:hint="Enter your age"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GENTER"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+     android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+
+    >
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content "
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+    android:textAllCaps="false"
+        android:paddingLeft="5dp"/>
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content "
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textColor="#000"
+        android:textStyle="bold"
+    android:textAllCaps="false"
+        android:layout_marginStart="20dp"
+        android:paddingLeft="5dp"/>
+
+</RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000"
+                    app:prefixText="+91"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#A818C1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:hint="Enter your mobile number"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POSTIONS"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#A818C1"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/player_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Enter your playing position"
+                        android:textStyle="bold"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="#F46D37"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="SUBMIT"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

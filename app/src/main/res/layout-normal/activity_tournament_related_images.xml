@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admain.Tournament_related_images">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/image_chose_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#FFE502"
+        android:text=""
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold|italic|normal"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD IMAGES"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#FF0505"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/chose_image_for_tournament"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_baseline_cloud_upload_24"
+        android:layout_marginEnd="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/image_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter some title"
+            android:paddingStart="8dp"
+            android:layout_margin="15dp"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:background="@drawable/admain_text"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/image_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the description"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:minHeight="100dp"
+            android:gravity="start"
+            android:background="@drawable/admain_text"
+            android:paddingStart="10dp"
+            android:layout_margin="15dp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/image_upload_to_firebase"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="upload pictures"
+        app:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</ScrollView>

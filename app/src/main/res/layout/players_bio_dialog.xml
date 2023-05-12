@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/playres_bio_dialag"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:elevation="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="STHC"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your email id and see your \n biodata!"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:gravity="center"/>
+</LinearLayout>
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="#000"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#A818C1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/player_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Enter email id"
+            android:inputType="text"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/save_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:checked="false"
+        android:paddingStart="2dp"
+        android:text="Remember me" />
+
+    <TextView
+        android:id="@+id/new_account_letter_viaible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textStyle="bold|normal"
+        android:textColor="#F81201"
+        android:visibility="invisible"
+        android:text="Now create a new account!"/>
+    <TextView
+        android:id="@+id/new_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#0B2FF8"
+        android:text="Create New Account?"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayout"
+
+        tools:ignore="MissingConstraints">
+
+
+    </TextView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingTop="15dp"
+       android:gravity="end">
+
+       <TextView
+           android:id="@+id/back_to_mainpage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginEnd="180dp"
+           android:fontFamily="serif"
+           android:gravity="center"
+           android:text="Go Back"
+           android:textColor="#0027FD"
+           android:textSize="15dp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/enter_biodata_page"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:layout_marginStart="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="5dp"
+           android:background="#0027FD"
+           android:fontFamily="serif"
+           android:padding="5dp"
+           android:paddingStart="15dp"
+           android:paddingEnd="15dp"
+           android:text="Next"
+           android:textColor="#ffffff"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           tools:ignore="MissingConstraints" />
+
+   </LinearLayout>
+
+
+</LinearLayout>

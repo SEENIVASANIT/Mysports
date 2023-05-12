@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Exit app"
+        android:id="@+id/sthc_hockey_club"
+        android:icon="@drawable/ic_abort_outline_24"
+        app:showAsAction="ifRoom"/>
+<item app:showAsAction="ifRoom"
+    android:id="@+id/item_hockey"
+    android:icon="@drawable/ic_baseline_munu_24"
+    android:title="">
+    <menu>
+        <item android:title="About hockey"
+            android:icon="@drawable/ic_baseline_about_hockey_24"
+
+            android:id="@+id/about_hockey"
+            app:showAsAction="never"/>
+        <item android:title="Hockey videos"
+            android:id="@+id/video_hockey"
+            android:icon="@drawable/ic_baseline_hockey_video_24"
+            app:showAsAction="never"/>
+        <item android:title="Hockey photos"
+            android:id="@+id/photo_hockey"
+            android:icon="@drawable/ic_baseline_hockey_photo_24"
+            app:showAsAction="never"/>
+        <item android:title="Hockey workout"
+            android:id="@+id/workout_hockey"
+            android:icon="@drawable/ic_baseline_hockey_run_24"
+
+            app:showAsAction="never"/>
+        <item android:title="ground marking"
+            android:id="@+id/ground_marking"
+            android:icon="@drawable/ic_baseline_ground_24"
+
+            app:showAsAction="never"/>
+
+        <item android:title="Exit app"
+            android:id="@+id/exit_hockey"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            app:showAsAction="never"/>
+
+
+    </menu>
+</item>
+
+</menu>

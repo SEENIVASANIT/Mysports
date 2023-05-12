@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:outlineSpotShadowColor="#000"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hockey_tollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A80B41"
+        app:title="WELCOME TO STHC"
+
+        app:titleTextColor="#CCE102"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/admain_page_swip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Select Activity"
+                    android:textColor="#000"
+                    android:textSize="30dp"
+                    android:textStyle="italic|bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="240dp"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/lay"
+                                        android:layout_width="200dp"
+                                        android:layout_height="150dp"
+                                        android:layout_marginStart="30dp"
+                                        android:layout_marginTop="30dp"
+                                        android:background="@drawable/multibutton"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="All Matchs."
+                                            android:textColor="#000"
+                                            android:textSize="17dp"
+                                            android:textStyle="bold|italic">
+
+
+                                        </TextView>
+
+                                        <TextView
+                                            android:id="@+id/go_match_page"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="15dp"
+                                            android:gravity="center"
+                                            android:paddingStart="7dp"
+                                            android:text="You can see matchs,\nPlayers name list and also match Pictures..."
+
+                                            android:textColor="#ffffff" />
+
+                                        <TextView
+                                            android:id="@+id/go_match_page1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="CLICK HERE!"
+                                            android:textColor="#000"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold|italic">
+
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/notification_count"
+                                        android:layout_width="37dp"
+                                        android:layout_height="36dp"
+                                        android:layout_marginStart="200dp"
+                                        android:layout_marginTop="19dp"
+                                        android:background="@drawable/notification_round"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay1"
+                                    android:layout_width="200dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="@drawable/multibutton1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:text="My BioData..."
+                                        android:textColor="#000"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold|italic">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/go_playersdata_page"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center"
+                                        android:paddingStart="7dp"
+                                        android:text="You can upload your boidata, \n see biodata\nand also edit and delete..."
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:id="@+id/players1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:text="CLICK HERE!"
+                                        android:textColor="#000"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold|italic"
+                                        tools:ignore="InvalidId">
+
+                                    </TextView>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:background="@drawable/multibutton2"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+                                        android:text="Sports equipment"
+                                        android:textColor="#000"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold|italic">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/go_sports_euipment_page"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center"
+                                        android:paddingStart="7dp"
+                                        android:text="See sports equipment,\nand also sale that equipment."
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:id="@+id/go_sports_euipment_page1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center"
+
+                                        android:text="CLICK HERE!"
+                                        android:textColor="#000"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold|italic">
+
+                                    </TextView>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:text="Trending hockey news!"
+                    android:textColor="#F11606"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="WebViewLayout">
+
+
+                    <WebView
+                        android:id="@+id/today_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progrss_web"
+                        style="?android:progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/today_news"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:outlineProvider="bounds"
+                        android:padding="10dp"
+                        tools:ignore="InvalidId" />
+
+                    <ImageView
+                        android:id="@+id/nointernet"
+                        android:layout_width="133dp"
+                        android:layout_height="142dp"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="136dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="142dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_round_wifi_off"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/topmessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nointernet"
+                        android:layout_alignParentEnd="true"
+
+
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="59dp"
+                        android:gravity="center"
+                        android:text="NO INTERNET CONNECTION!!!"
+
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@id/nointernet"
+                        app:layout_constraintStart_toStartOf="@id/nointernet"
+                        app:layout_constraintTop_toBottomOf="@+id/nointernet" />
+
+                    <TextView
+                        android:id="@+id/submassage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/topmessage"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="center"
+                        android:text="Please Check Your Internet Connectivity\nand tryagin!"
+                        android:textColor="#FD2B2B2B"
+                        android:textSize="13dp"
+                        android:textStyle="italic"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tryagin"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/admain_players_deatalis"
+                    android:gravity="center"
+                    android:text="Tryagin!"
+                    android:textColor="#BA000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/text_page_backgrount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Match"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/match_TITLE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="19dp"
+                android:background="@drawable/admain_text"
+                android:drawableStart="@drawable/custem_event_icon"
+                android:drawablePadding="5dp"
+                android:hint="TOURNAMENT TITLE"
+                android:padding="15dp"
+                android:textStyle="italic|bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PLACE"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/match_PLASE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/admain_text"
+                android:drawableStart="@drawable/custem_place_icon"
+                android:drawablePadding="5dp"
+                android:hint="TOURNAMENT PLACE"
+                android:padding="15dp"
+                android:textStyle="italic|bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DATE"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/match_DATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/admain_text"
+                android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="5dp"
+                android:hint="TOURNAMENT DATE"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textStyle="italic|bold"
+
+                />
+
+            <TextView
+                android:id="@+id/upload_to_fierbase"
+                android:layout_width="275dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:text="UPLOAD"
+                android:textColor="#000"
+                android:textSize="40dp"
+
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/upload_match_process"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="-54dp"
+                android:layout_marginBottom="10dp"
+                android:progressTint="#FD0505"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/upload_bottom_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="UPLOAD NEW MATCHES\nAND THIS MATCHES STORE IN DATE ORDER"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="570dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="ADD PLAYERS NAME LIST"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            android:visibility="invisible"
+            tools:ignore="NotSibling,UnknownId" />
+
+
+        <EditText
+            android:id="@+id/edit_players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_players"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/admain_text"
+            android:gravity="start"
+
+            android:hint="Edit players name with our position!"
+            android:padding="15dp"
+            android:textStyle="italic|bold"
+            android:visibility="invisible" />
+
+
+
+        <TextView
+            android:id="@+id/edit_all_data_to_firebase"
+            android:layout_width="275dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/edit_players"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/login_button"
+            android:gravity="center"
+            android:text="UPLOAD"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+<TextView
+    android:id="@+id/edit_bottom_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edit_all_data_to_firebase"
+    android:layout_marginBottom="20dp"
+    android:text="Edit Tournament title,Tournament place,Tournament date and Tournament players name list!"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:textSize="15dp"
+
+    android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/edit_match_process"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignStart="@+id/edit_all_data_to_firebase"
+            android:layout_alignTop="@+id/edit_all_data_to_firebase"
+            android:layout_alignEnd="@+id/edit_all_data_to_firebase"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="200dp"
+            android:progressTint="#FD0505"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+
+</ScrollView>
